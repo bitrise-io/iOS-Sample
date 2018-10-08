@@ -13,5 +13,3 @@ warn("This PR is less than 500 lines of code.") if git.lines_of_code < 500
 # # Don't let testing shortcuts get into master by accident
 # fail("fdescribe left in tests") if `grep -r fdescribe specs/ `.length > 1
 # fail("fit left in tests") if `grep -r fit specs/ `.length > 1
-
-swiftlint.lint_files inline_mode: true
