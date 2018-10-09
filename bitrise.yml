@@ -1,0 +1,25 @@
+format_version: "6"
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
+project_type: other
+trigger_map:
+- push_branch: '*'
+  workflow: primary
+- pull_request_source_branch: '*'
+  workflow: primary
+workflows:
+  primary:
+    steps:
+    - activate-ssh-key@4.0.3:
+        inputs:
+        - ssh_rsa_private_key: $FIRST_SSH_PRIVATE_KEY
+    - script@1.1.5:
+        title: Clone de iOS-StargateKitRequest
+        inputs:
+        - content: |-
+            #!/usr/bin/env bash
+            # fail if any commands fails
+            set -e
+            # debug log
+            set -x
+
+            git clone git@bitbucket.org:Birmachera/bitrise-xcodearchivetest.git
