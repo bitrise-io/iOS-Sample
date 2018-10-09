@@ -3,11 +3,11 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 project_type: other
 trigger_map:
 - push_branch: '*'
-  workflow: primary
+  workflow: test_bitrise_yml
 - pull_request_source_branch: '*'
-  workflow: primary
+  workflow: test_bitrise_yml
 workflows:
-  primary:
+  test_bitrise_yml:
     steps:
     - activate-ssh-key@4.0.3:
         inputs:
