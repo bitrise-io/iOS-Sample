@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		095586D8071045FC2B8924D5 /* libPods-firebase-crashlytics-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6A44E534946E061C29BCFE /* libPods-firebase-crashlytics-sample.a */; };
 		47373C3C23030AB6001C978D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47373C3B23030AB6001C978D /* AppDelegate.swift */; };
 		47373C3E23030AB6001C978D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47373C3D23030AB6001C978D /* ViewController.swift */; };
 		47373C4123030AB6001C978D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47373C3F23030AB6001C978D /* Main.storyboard */; };
 		47373C4323030AB7001C978D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47373C4223030AB7001C978D /* Assets.xcassets */; };
 		47373C4623030AB7001C978D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47373C4423030AB7001C978D /* LaunchScreen.storyboard */; };
 		47373C4E23030B45001C978D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47373C4D23030B45001C978D /* GoogleService-Info.plist */; };
+		E3DB7BFD8B3B71602E0EAD7C /* Pods_firebase_crashlytics_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D22D23ED1E2194E4839CFB /* Pods_firebase_crashlytics_sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A091D38311AD892A56F6BFD /* Pods-firebase-crashlytics-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-crashlytics-sample.release.xcconfig"; path = "Target Support Files/Pods-firebase-crashlytics-sample/Pods-firebase-crashlytics-sample.release.xcconfig"; sourceTree = "<group>"; };
-		2C6A44E534946E061C29BCFE /* libPods-firebase-crashlytics-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firebase-crashlytics-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47373C3823030AB6001C978D /* firebase-crashlytics-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firebase-crashlytics-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47373C3B23030AB6001C978D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47373C3D23030AB6001C978D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		47373C4723030AB7001C978D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47373C4D23030B45001C978D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F733D66FE0111BD8B20F7C1 /* Pods-firebase-crashlytics-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-crashlytics-sample.debug.xcconfig"; path = "Target Support Files/Pods-firebase-crashlytics-sample/Pods-firebase-crashlytics-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		B6D22D23ED1E2194E4839CFB /* Pods_firebase_crashlytics_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firebase_crashlytics_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				095586D8071045FC2B8924D5 /* libPods-firebase-crashlytics-sample.a in Frameworks */,
+				E3DB7BFD8B3B71602E0EAD7C /* Pods_firebase_crashlytics_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 		C4FC2EA89174766EC8C1656C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C6A44E534946E061C29BCFE /* libPods-firebase-crashlytics-sample.a */,
+				B6D22D23ED1E2194E4839CFB /* Pods_firebase_crashlytics_sample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +103,7 @@
 				47373C3523030AB6001C978D /* Frameworks */,
 				47373C3623030AB6001C978D /* Resources */,
 				47BF1810230310D5005BDAFD /* ShellScript */,
+				D328C5E7EEA91E3C9976FDE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +179,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		D328C5E7EEA91E3C9976FDE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-firebase-crashlytics-sample/Pods-firebase-crashlytics-sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-firebase-crashlytics-sample/Pods-firebase-crashlytics-sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-firebase-crashlytics-sample/Pods-firebase-crashlytics-sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		E2394F5CC81413B7903A4941 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -269,7 +287,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -359,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				INFOPLIST_FILE = "firebase-crashlytics-sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 72SA8V3WYL;
 				INFOPLIST_FILE = "firebase-crashlytics-sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
