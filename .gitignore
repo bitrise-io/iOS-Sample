@@ -1,0 +1,7 @@
+**/xcuserdata/
+
+iOS Sample.xcworkspace/
+Pods/
+
+firebase-crashlytics-sample/firebase-crashlytics-sample.xcworkspace/
+firebase-crashlytics-sample/Pods/
