@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:firebase-crashlytics-sample/firebase-crashlytics-sample.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:iOS Sample.xcodeproj">
    </FileRef>
    <FileRef
